@@ -223,7 +223,7 @@ header a:hover {
   position: absolute;
   z-index: 0;
   bottom: 0px;
-  background-image: url(/images/bg-curvy-mobile.svg);
+  background-image: url(images/bg-curvy-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -231,7 +231,7 @@ header a:hover {
 
 @media screen and (min-width: 899px) {
   .hero:after {
-    background-image: url(/images/bg-curvy-desktop.svg);
+    background-image: url(images/bg-curvy-desktop.svg);
     height: 33vw;
   }
 }
