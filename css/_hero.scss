@@ -30,19 +30,20 @@
   }
   img {
     width: 100%;
-    max-width: 716px;
+    max-width: 756px;
   }
 
   h1 {
-    max-width: 678px;
+    max-width: 800px;
     font-size: 1.5em;
     line-height: 1.5;
-    margin: 1.1em 0;
+    margin: 1.1em auto;
   }
 
   p {
-    max-width: 585px;
+    max-width: 685px;
     font-size: 0.95em;
+    margin: 0 auto 1.2rem auto;
   }
 
   button {

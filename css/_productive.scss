@@ -27,6 +27,7 @@
 
     @include breakpoint(large) {
       text-align: left;
+      line-height: 1.4;
     }
     h2 {
       font-size: 1.6em;
