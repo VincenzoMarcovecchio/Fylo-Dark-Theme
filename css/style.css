@@ -295,7 +295,7 @@ header a:hover {
 }
 
 .features .feature-grid {
-  max-width: 920px;
+  max-width: 950px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   margin: 0 auto;
@@ -315,9 +315,9 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .features .feature-grid {
-    gap: 7vh 7vw;
-    -ms-grid-columns: (300px)[2];
-        grid-template-columns: repeat(2, 300px);
+    gap: 7vh 12vw;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -362,7 +362,7 @@ header a:hover {
 
 .features .feature-description {
   font-size: 1rem;
-  max-width: 300px;
+  max-width: 350px;
   line-height: 1.4;
   margin: 0 auto;
 }
