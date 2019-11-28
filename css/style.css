@@ -255,7 +255,7 @@ header a:hover {
 
 .hero p {
   max-width: 685px;
-  font-size: 0.95em;
+  font-size: 0.75em;
   margin: 0 auto 1.2rem auto;
 }
 
@@ -316,8 +316,8 @@ header a:hover {
 @media screen and (min-width: 999px) {
   .features .feature-grid {
     gap: 7vh 7vw;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
     padding-left: 60px;
     padding-right: 60px;
   }
