@@ -2,7 +2,7 @@
   background-color: #181f2b;
 
   .feature-grid {
-    max-width: 950px;
+    max-width: 850px;
     grid-template-columns: 1fr;
     margin: 0 auto;
     display: grid;
@@ -10,14 +10,14 @@
     padding-right: 20px;
 
     @include breakpoint(medium) {
-      gap: 8vh 10vw;
+      gap: 9vh 8vw;
       grid-template-columns: repeat(2, 1fr);
     }
     @include breakpoint(large) {
-      gap: 7vh 12vw;
+      gap: 7vh 9vw;
       grid-template-columns: repeat(2, 1fr);
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 

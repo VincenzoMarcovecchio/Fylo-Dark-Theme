@@ -30,7 +30,7 @@
   }
   img {
     width: 100%;
-    max-width: 756px;
+    max-width: 656px;
   }
 
   h1 {
@@ -41,9 +41,9 @@
   }
 
   p {
-    max-width: 685px;
+    max-width: 585px;
     font-size: 0.75em;
-    margin: 0 auto 1.2rem auto;
+    margin: 0 auto 1.3rem auto;
   }
 
   button {
@@ -64,7 +64,7 @@
     border-radius: $border-radius-circle;
 
     @include breakpoint(large) {
-      max-width: 200px;
+      max-width: 350px;
     }
     &:hover {
       background: linear-gradient(to right, $ctaBlue, $ctaBlue);

@@ -243,7 +243,7 @@ header a:hover {
 
 .hero img {
   width: 100%;
-  max-width: 756px;
+  max-width: 656px;
 }
 
 .hero h1 {
@@ -254,9 +254,9 @@ header a:hover {
 }
 
 .hero p {
-  max-width: 685px;
+  max-width: 585px;
   font-size: 0.75em;
-  margin: 0 auto 1.2rem auto;
+  margin: 0 auto 1.3rem auto;
 }
 
 .hero button {
@@ -281,7 +281,7 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .hero__button {
-    max-width: 200px;
+    max-width: 350px;
   }
 }
 
@@ -295,7 +295,7 @@ header a:hover {
 }
 
 .features .feature-grid {
-  max-width: 950px;
+  max-width: 850px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   margin: 0 auto;
@@ -307,7 +307,7 @@ header a:hover {
 
 @media screen and (min-width: 899px) {
   .features .feature-grid {
-    gap: 8vh 10vw;
+    gap: 9vh 8vw;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -315,11 +315,11 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .features .feature-grid {
-    gap: 7vh 12vw;
+    gap: 7vh 9vw;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -599,7 +599,7 @@ header a:hover {
 .footer {
   background-color: #0a1425;
   font-size: 1rem;
-  padding-top: 250px;
+  padding-top: 0px;
 }
 
 @media screen and (min-width: 899px) {
@@ -631,8 +631,8 @@ header a:hover {
 @media screen and (min-width: 999px) {
   .footer .container, .footer .container--small {
     grid-column-gap: 35px;
-    -ms-grid-columns: 2fr (1fr)[4];
-        grid-template-columns: 2fr repeat(4, 1fr);
+    -ms-grid-columns: 2fr (1fr)[3] 2fr;
+        grid-template-columns: 2fr repeat(3, 1fr) 2fr;
     -ms-grid-rows: 60px 1fr;
         grid-template-rows: 60px 1fr;
         grid-template-areas: "logo logo logo logo logo" "address contact links1 links2 social";
@@ -703,12 +703,20 @@ header a:hover {
 
 .footer__contact-phone svg {
   width: 18px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.footer__contact-phone a {
+  font-size: 1rem;
 }
 
 .footer__contact-email svg {
   width: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.footer__contact-email a {
+  font-size: 1rem;
 }
 
 .footer__links1 a, .footer__links2 a {
@@ -724,8 +732,8 @@ header a:hover {
 
 @media screen and (min-width: 999px) {
   .footer__links1 {
-    -ms-grid-column-align: right;
-        justify-self: right;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -756,7 +764,9 @@ header a:hover {
   margin-right: 16px;
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 8px;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
