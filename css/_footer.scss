@@ -1,0 +1,141 @@
+.footer {
+  background-color: $footerBg;
+  font-size: 1rem;
+  padding-top: 300px;
+
+  @include breakpoint(medium) {
+    padding-top: 200px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    display: grid;
+    grid-row-gap: 35px;
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "address" "contact" "links1" "links2" "social";
+
+    @include breakpoint(medium) {
+      grid-column-gap: 25px;
+    }
+    @include breakpoint(large) {
+      grid-column-gap: 35px;
+      grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+      grid-template-rows: 60px 1fr;
+      grid-template-areas: "logo logo logo logo logo" "address contact links1 links2 social";
+    }
+
+    @include breakpoint(xlarge) {
+      grid-column-gap: 60px;
+    }
+  }
+
+  &__logo {
+    @include breakpoint(large) {
+      //grid-column: 1 / end;
+      grid-area: logo;
+    }
+  }
+
+  &__address {
+    grid-area: address;
+    display: flex;
+
+    svg {
+      flex: 0 0 13px;
+      margin-right: 28px;
+      margin-top: 3px;
+    }
+  }
+
+  &__contact {
+    grid-area: contact;
+
+    @include breakpoint(large) {
+      justify-self: right;
+    }
+    a {
+      font-size: 0.8rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-phone,
+    &-email {
+      display: flex;
+    }
+
+    &-phone {
+      margin-bottom: 20px;
+    }
+    &-phone svg {
+      width: 18px;
+      margin-right: 10px;
+    }
+    &-phone a {
+      font-size: 1rem;
+    }
+
+    &-email svg {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    &-email a {
+      font-size: 1rem;
+    }
+  }
+
+  &__links1,
+  &__links2 {
+    a {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links1 {
+    grid-area: links1;
+
+    @include breakpoint(large) {
+      justify-self: center;
+    }
+  }
+
+  &__links2 {
+    grid-area: links2;
+  }
+
+  &__social {
+    display: inline-flex;
+    grid-area: social;
+    justify-self: start;
+    justify-content: space-between;
+    min-width: 230px;
+
+    @include breakpoint(medium) {
+      justify-self: start;
+      justify-content: space-between;
+      min-width: 200px;
+    }
+
+    .fab {
+      margin-right: 20px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      text-align: center;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: $footerBg;
+      }
+    }
+  }
+}

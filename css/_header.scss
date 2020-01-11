@@ -1,0 +1,58 @@
+header {
+  background-color: $introBg;
+  .container {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
+    grid-gap: 25px;
+    align-items: center;
+
+    @include breakpoint(large) {
+      padding: 73px 80px;
+      grid-gap: 56px;
+    }
+    @include breakpoint-down(small) {
+      grid-gap: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      justify-content: space-between;
+      padding: 30px 0 0 0;
+    }
+  }
+
+  img {
+    width: 100px;
+
+    @include breakpoint(large) {
+      width: 185px;
+    }
+    @include breakpoint-down(small) {
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    font-size: 1rem;
+
+    @include breakpoint(large) {
+      font-size: 1rem;
+    }
+    @include breakpoint-down(small) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      background-color: $ctaBlue;
+
+      &:hover {
+        text-decoration: underline;
+        background-color: hsl(198, 69%, 19%);
+        color: $ctaBlue;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
