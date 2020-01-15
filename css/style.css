@@ -600,6 +600,12 @@ header a:hover {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 499px) {
+  .quotes .quote__text {
+    font-size: 0.7em;
+  }
+}
+
 .quotes .quote__author {
   display: -ms-grid;
   display: grid;
@@ -633,8 +639,20 @@ header a:hover {
   font-weight: 700;
 }
 
+@media screen and (max-width: 499px) {
+  .quotes .quote__author-name {
+    font-size: 0.7em;
+  }
+}
+
 .quotes .quote__author-title {
   font-size: 0.5em;
+}
+
+@media screen and (max-width: 499px) {
+  .quotes .quote__author-title {
+    font-size: 0.7em;
+  }
 }
 
 .signup {
@@ -820,6 +838,7 @@ header a:hover {
 .footer__links1 a, .footer__links2 a {
   display: block;
   margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .footer__links1 {
@@ -863,6 +882,16 @@ header a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .footer__social {
+    height: 100px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 

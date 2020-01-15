@@ -48,6 +48,9 @@
       font-size: 0.65em;
       line-height: 1.4;
       margin-bottom: 30px;
+      @include breakpoint-down(small) {
+        font-size: 0.7em;
+      }
     }
 
     &__author {
@@ -72,10 +75,16 @@
       &-name {
         font-size: 0.5em;
         font-weight: 700;
+        @include breakpoint-down(small) {
+          font-size: 0.7em;
+        }
       }
 
       &-title {
         font-size: 0.5em;
+        @include breakpoint-down(small) {
+          font-size: 0.7em;
+        }
       }
     }
   }
