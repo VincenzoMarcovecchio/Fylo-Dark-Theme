@@ -32,10 +32,10 @@ header {
   }
 
   a {
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     @include breakpoint(large) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     @include breakpoint-down(small) {
       display: block;
@@ -45,14 +45,10 @@ header {
       background-color: $ctaBlue;
 
       &:hover {
-        text-decoration: underline;
-        background-color: hsl(198, 69%, 19%);
-        color: $ctaBlue;
+        background-color: hsl(198, 88%, 35%);
+        color: #fff;
+        text-decoration: none;
       }
-    }
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 }

@@ -1,5 +1,6 @@
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -209,12 +210,12 @@ header img {
 }
 
 header a {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 999px) {
   header a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -227,14 +228,10 @@ header a {
     background-color: #329ecc;
   }
   header a:hover {
-    text-decoration: underline;
-    background-color: #0f3e52;
-    color: #329ecc;
+    background-color: #0b79a8;
+    color: #fff;
+    text-decoration: none;
   }
-}
-
-header a:hover {
-  text-decoration: underline;
 }
 
 .hero {
