@@ -715,18 +715,14 @@ header a {
 }
 
 .signup__form label {
-  position: absolute;
-  left: 20px;
-  top: 10px;
-  color: #329ecc;
+ position: absolute;
+    left: 25px;
+    top: 17px;
+    color: #329ecc;
+    font-size: 15px;
 }
 
-@media screen and (min-width: 899px) {
-  .signup__form label {
-    left: 20px;
-    top: 10px;
-  }
-}
+
 
 .footer {
   background-color: #0a1425;
