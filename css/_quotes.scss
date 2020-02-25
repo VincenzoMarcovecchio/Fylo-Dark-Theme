@@ -75,6 +75,7 @@
       &-name {
         font-size: 0.5em;
         font-weight: 700;
+        margin-top:0.2rem;
         @include breakpoint-down(small) {
           font-size: 0.7em;
         }
